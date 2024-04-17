@@ -11,7 +11,7 @@ public class Main {
 		System.out.println(pj.getContaBanco().getSaldo());
 		
 		
-		Usuario user = new Funcionario("login", "senha", "email", pj, pj);
+		//Usuario user = new Funcionario("login", "senha", "email", pj, pj);
 				
 	}
 }
