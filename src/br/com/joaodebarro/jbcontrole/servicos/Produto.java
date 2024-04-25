@@ -1,3 +1,4 @@
+package br.com.joaodebarro.jbcontrole.servicos;
 
 public class Produto {
 
@@ -44,5 +45,13 @@ public class Produto {
 
 	public void setValorVenda(double valorVenda) {
 		this.valorVenda = valorVenda;
+	}
+	
+	public void adicionarNoEstoque(double quantidade) {
+		this.qtdEstoque += quantidade;
+	}
+	
+	public void removerNoEstoque(double quantidade) {
+		this.qtdEstoque -= quantidade;
 	}
 }

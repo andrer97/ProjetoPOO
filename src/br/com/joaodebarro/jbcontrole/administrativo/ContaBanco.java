@@ -1,3 +1,4 @@
+package br.com.joaodebarro.jbcontrole.administrativo;
 
 public class ContaBanco {
 

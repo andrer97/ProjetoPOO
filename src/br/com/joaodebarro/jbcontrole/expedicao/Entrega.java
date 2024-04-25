@@ -1,21 +1,35 @@
+package br.com.joaodebarro.jbcontrole.expedicao;
 import java.util.Date;
+
+import br.com.joaodebarro.jbcontrole.servicos.Venda;
+import br.com.joaodebarro.jbcontrole.usuarios.Funcionario;
 
 public class Entrega {
 
+	private Veiculo veiculo;
 	private Funcionario entregador;
 	private Date dataPrevista;
 	private Date dataEntrega;
 	private Venda venda;
 	private int tentativasEntregas;
 	
-	public Entrega(Funcionario entregador,Date dataPrevista, Venda venda) {
+	public Entrega(Veiculo veiculo, Funcionario entregador,Date dataPrevista, Venda venda) {
 		super();
+		this.veiculo = veiculo;
 		this.entregador = entregador;
 		this.dataPrevista = dataPrevista;
 		this.venda = venda;
 		this.tentativasEntregas = 0;
 	}
 	
+	public Veiculo getVeiculo() {
+		return veiculo;
+	}
+
+	public void setVeiculo(Veiculo veiculo) {
+		this.veiculo = veiculo;
+	}
+
 	public Funcionario getEntregador() {
 		return entregador;
 	}
@@ -51,5 +65,9 @@ public class Entrega {
 	
 	public void tentativaFracassada() {
 		this.tentativasEntregas++;
+	}
+	
+	public Endereco getEndereco() {
+		return venda.getCliente().getPessoa().getEndereco();
 	}
 }

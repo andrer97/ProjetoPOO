@@ -1,3 +1,4 @@
+package br.com.joaodebarro.jbcontrole.expedicao;
 
 public class Endereco {
 

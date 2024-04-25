@@ -1,5 +1,9 @@
+package br.com.joaodebarro.jbcontrole.servicos;
 import java.util.Date;
 import java.util.List;
+
+import br.com.joaodebarro.jbcontrole.administrativo.Fornecedor;
+import br.com.joaodebarro.jbcontrole.usuarios.Funcionario;
 
 public class Compra {
 
@@ -10,7 +14,7 @@ public class Compra {
 	private Funcionario comprador;
 	private double valorFinal;
 	
-	public Compra(Date data, int notaFiscal, Fornecedor fornecedor, List<Itens> listaItens, Funcionario comprador) {
+	public Compra(int notaFiscal, Fornecedor fornecedor, List<Itens> listaItens, Funcionario comprador) {
 		super();
 		this.data = new Date();
 		this.notaFiscal = notaFiscal;
@@ -18,9 +22,15 @@ public class Compra {
 		this.listaItens = listaItens;
 		this.comprador = comprador;
 		valorFinal = 0;
-		for(Itens atual : listaItens) {
-			valorFinal += atual.getQuantidade() * atual.getProduto().getValorCompra();
-			atual.getProduto().setQtdEstoque(atual.getProduto().getQtdEstoque() + atual.getQuantidade());
+		for(Itens itemAtual : listaItens) {
+			// cria a variavel quantidade que recebe atraves do metodo getQuantidade() a quantidade do Itens atual
+			double quantidade = itemAtual.getQuantidade();
+			//cria a variavel produto do tipo produto que recebe o produto do Itens atual
+			Produto produto = itemAtual.getProduto();
+			//acessa o valor de compra do produto atual e multiplica pela quantidade atual
+			valorFinal +=  quantidade * produto.getValorCompra();
+			//pega a quantidade em estoque do produto atual e soma com a quantidade atual e joga esse valor para a quantidade em estoque do produto atual
+			produto.setQtdEstoque(produto.getQtdEstoque() + quantidade);
 		}
 		this.fornecedor.novaCompra(this);
 	}
@@ -47,10 +57,6 @@ public class Compra {
 
 	public List<Itens> getListaItens() {
 		return listaItens;
-	}
-
-	public void setListaItens(List<Itens> listaItens) {
-		this.listaItens = listaItens;
 	}
 
 	public Funcionario getComprador() {

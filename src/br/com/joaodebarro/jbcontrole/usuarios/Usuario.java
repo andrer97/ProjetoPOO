@@ -1,17 +1,16 @@
+package br.com.joaodebarro.jbcontrole.usuarios;
 
 public abstract class Usuario {
 
 	private String login;
 	private String senha;
 	private String email;
-	private Pessoa pessoa;
 	
-	public Usuario(String login, String senha, String email, Pessoa pessoa) {
+	public Usuario(String login, String senha, String email) {
 		super();
 		this.login = login;
 		this.senha = senha;
 		this.email = email;
-		this.pessoa = pessoa;
 	}
 
 	public String getLogin() {
@@ -24,9 +23,5 @@ public abstract class Usuario {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}
-
-	public Pessoa getPessoa() {
-		return pessoa;
 	}
 }
