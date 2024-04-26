@@ -4,14 +4,14 @@ import br.com.joaodebarro.jbcontrole.expedicao.Endereco;
 
 public class PessoaJuridica extends Pessoa{
 
-	private int cnpj;
+	private String cnpj;
 
-	public PessoaJuridica(String nome, Endereco endereco, ContaBanco contaBanco, int cnpj) {
+	public PessoaJuridica(String nome, Endereco endereco, ContaBanco contaBanco, String cnpj) {
 		super(nome, endereco, contaBanco);
 		this.cnpj = cnpj;
 	}
 
-	public int getCnpj() {
+	public String getCnpj() {
 		return cnpj;
 	}
 }

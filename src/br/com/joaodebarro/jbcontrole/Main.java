@@ -4,21 +4,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import br.com.joaodebarro.jbcontrole.administrativo.Caixa;
-import br.com.joaodebarro.jbcontrole.administrativo.Cargo;
-import br.com.joaodebarro.jbcontrole.administrativo.ContaBanco;
-import br.com.joaodebarro.jbcontrole.administrativo.Fornecedor;
-import br.com.joaodebarro.jbcontrole.expedicao.Endereco;
-import br.com.joaodebarro.jbcontrole.expedicao.Entrega;
-import br.com.joaodebarro.jbcontrole.expedicao.Veiculo;
-import br.com.joaodebarro.jbcontrole.pessoas.PessoaFisica;
-import br.com.joaodebarro.jbcontrole.pessoas.PessoaJuridica;
-import br.com.joaodebarro.jbcontrole.servicos.Compra;
-import br.com.joaodebarro.jbcontrole.servicos.Itens;
-import br.com.joaodebarro.jbcontrole.servicos.Produto;
-import br.com.joaodebarro.jbcontrole.servicos.Venda;
-import br.com.joaodebarro.jbcontrole.usuarios.Cliente;
-import br.com.joaodebarro.jbcontrole.usuarios.Funcionario;
+import br.com.joaodebarro.jbcontrole.administrativo.*;
+import br.com.joaodebarro.jbcontrole.expedicao.*;
+import br.com.joaodebarro.jbcontrole.pessoas.*;
+import br.com.joaodebarro.jbcontrole.servicos.*;
+import br.com.joaodebarro.jbcontrole.usuarios.*;
 
 public class Main {
 
@@ -62,24 +52,24 @@ public class Main {
 
         // Criando 10 pessoas físicas
         List<PessoaFisica> pessoasFisicas = new ArrayList<>();
-        pessoasFisicas.add(new PessoaFisica("João", enderecos.get(0), contas.get(0), 123456789));
-        pessoasFisicas.add(new PessoaFisica("Maria", enderecos.get(1), contas.get(1), 987654321));
-        pessoasFisicas.add(new PessoaFisica("Pedro", enderecos.get(2), contas.get(2), 456789123));
-        pessoasFisicas.add(new PessoaFisica("Ana", enderecos.get(3), contas.get(3), 789456123));
-        pessoasFisicas.add(new PessoaFisica("Carlos", enderecos.get(4), contas.get(4), 123789456));
-        pessoasFisicas.add(new PessoaFisica("Letícia", enderecos.get(5), contas.get(5), 135792468));
-        pessoasFisicas.add(new PessoaFisica("Lucas", enderecos.get(6), contas.get(6), 246813579));
-        pessoasFisicas.add(new PessoaFisica("Fernanda", enderecos.get(7), contas.get(7), 864197532));
-        pessoasFisicas.add(new PessoaFisica("Felipe", enderecos.get(8), contas.get(8), 951753486));
-        pessoasFisicas.add(new PessoaFisica("Isabela", enderecos.get(9), contas.get(9), 963852741));
+        pessoasFisicas.add(new PessoaFisica("João", enderecos.get(0), contas.get(0), "123456789"));
+        pessoasFisicas.add(new PessoaFisica("Maria", enderecos.get(1), contas.get(1), "987654321"));
+        pessoasFisicas.add(new PessoaFisica("Pedro", enderecos.get(2), contas.get(2), "456789123"));
+        pessoasFisicas.add(new PessoaFisica("Ana", enderecos.get(3), contas.get(3), "789456123"));
+        pessoasFisicas.add(new PessoaFisica("Carlos", enderecos.get(4), contas.get(4), "123789456"));
+        pessoasFisicas.add(new PessoaFisica("Letícia", enderecos.get(5), contas.get(5), "135792468"));
+        pessoasFisicas.add(new PessoaFisica("Lucas", enderecos.get(6), contas.get(6), "246813579"));
+        pessoasFisicas.add(new PessoaFisica("Fernanda", enderecos.get(7), contas.get(7), "864197532"));
+        pessoasFisicas.add(new PessoaFisica("Felipe", enderecos.get(8), contas.get(8), "951753486"));
+        pessoasFisicas.add(new PessoaFisica("Isabela", enderecos.get(9), contas.get(9), "963852741"));
 
         // Criando 5 pessoas jurídicas
         List<PessoaJuridica> pessoasJuridicas = new ArrayList<>();
-        pessoasJuridicas.add(new PessoaJuridica("Empresa A", enderecos.get(10), contas.get(10), 678901234));
-        pessoasJuridicas.add(new PessoaJuridica("Empresa B", enderecos.get(11), contas.get(11), 432101234));
-        pessoasJuridicas.add(new PessoaJuridica("Empresa C", enderecos.get(12), contas.get(12), 912301234));
-        pessoasJuridicas.add(new PessoaJuridica("Empresa D", enderecos.get(13), contas.get(13), 612301234));
-        pessoasJuridicas.add(new PessoaJuridica("Empresa E", enderecos.get(14), contas.get(14), 945601234));
+        pessoasJuridicas.add(new PessoaJuridica("Empresa A", enderecos.get(10), contas.get(10), "678901234"));
+        pessoasJuridicas.add(new PessoaJuridica("Empresa B", enderecos.get(11), contas.get(11), "432101234"));
+        pessoasJuridicas.add(new PessoaJuridica("Empresa C", enderecos.get(12), contas.get(12), "912301234"));
+        pessoasJuridicas.add(new PessoaJuridica("Empresa D", enderecos.get(13), contas.get(13), "612301234"));
+        pessoasJuridicas.add(new PessoaJuridica("Empresa E", enderecos.get(14), contas.get(14), "945601234"));
 
         // Criando 5 funcionários
         List<Funcionario> funcionarios = new ArrayList<>();

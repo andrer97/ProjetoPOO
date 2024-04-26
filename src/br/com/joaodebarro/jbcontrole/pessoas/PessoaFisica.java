@@ -4,14 +4,14 @@ import br.com.joaodebarro.jbcontrole.expedicao.Endereco;
 
 public class PessoaFisica extends Pessoa{
 
-	private int cpf;
+	private String cpf;
 
-	public PessoaFisica(String nome, Endereco endereco, ContaBanco contaBanco, int cpf) {
+	public PessoaFisica(String nome, Endereco endereco, ContaBanco contaBanco, String cpf) {
 		super(nome, endereco, contaBanco);
 		this.cpf = cpf;
 	}
 
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
 }
