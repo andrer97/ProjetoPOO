@@ -27,16 +27,8 @@ public class Caixa extends ContaBanco{
 		fornecedores.add(fornecedor);
 	}
 	
-	public void removeFornecedor(Fornecedor fornecedor) {
-		fornecedores.remove(fornecedor);
-	}
-	
 	public void addFuncionario(Funcionario funcionario) {
 		funcionarios.add(funcionario);
-	}
-	
-	public void removeFuncionario(Funcionario funcionario) {
-		funcionarios.remove(funcionario);
 	}
 	
 	public void realizarPagamentoFornecedores() {
