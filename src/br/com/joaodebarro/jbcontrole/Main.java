@@ -58,18 +58,18 @@ public class Main {
         pessoasFisicas.add(new PessoaFisica("Ana", enderecos.get(3), contas.get(3), "789456123"));
         pessoasFisicas.add(new PessoaFisica("Carlos", enderecos.get(4), contas.get(4), "123789456"));
         pessoasFisicas.add(new PessoaFisica("Letícia", enderecos.get(5), contas.get(5), "135792468"));
-        pessoasFisicas.add(new PessoaFisica("Lucas", enderecos.get(6), contas.get(6), "246813579"));
+        pessoasFisicas.add(new PessoaFisica("Lucas", enderecos.get(6), contas.get(6), 	"246813579"));
         pessoasFisicas.add(new PessoaFisica("Fernanda", enderecos.get(7), contas.get(7), "864197532"));
         pessoasFisicas.add(new PessoaFisica("Felipe", enderecos.get(8), contas.get(8), "951753486"));
         pessoasFisicas.add(new PessoaFisica("Isabela", enderecos.get(9), contas.get(9), "963852741"));
 
         // Criando 5 pessoas jurídicas
         List<PessoaJuridica> pessoasJuridicas = new ArrayList<>();
-        pessoasJuridicas.add(new PessoaJuridica("Empresa A", enderecos.get(10), contas.get(10), "678901234"));
-        pessoasJuridicas.add(new PessoaJuridica("Empresa B", enderecos.get(11), contas.get(11), "432101234"));
-        pessoasJuridicas.add(new PessoaJuridica("Empresa C", enderecos.get(12), contas.get(12), "912301234"));
-        pessoasJuridicas.add(new PessoaJuridica("Empresa D", enderecos.get(13), contas.get(13), "612301234"));
-        pessoasJuridicas.add(new PessoaJuridica("Empresa E", enderecos.get(14), contas.get(14), "945601234"));
+        pessoasJuridicas.add(new PessoaJuridica("Empresa A", enderecos.get(10), contas.get(10), "1678901234"));
+        pessoasJuridicas.add(new PessoaJuridica("Empresa B", enderecos.get(11), contas.get(11), "1432101234"));
+        pessoasJuridicas.add(new PessoaJuridica("Empresa C", enderecos.get(12), contas.get(12), "1912301234"));
+        pessoasJuridicas.add(new PessoaJuridica("Empresa D", enderecos.get(13), contas.get(13), "1612301234"));
+        pessoasJuridicas.add(new PessoaJuridica("Empresa E", enderecos.get(14), contas.get(14), "1945601234"));
 
         // Criando 5 funcionários
         List<Funcionario> funcionarios = new ArrayList<>();
@@ -94,6 +94,11 @@ public class Main {
         produtos.add(new Produto("Produto C", 30.0, 35.0, 40.0));
         produtos.add(new Produto("Produto D", 40.0, 45.0, 50.0));
         produtos.add(new Produto("Produto E", 50.0, 55.0, 60.0));
+        produtos.add(new Produto("Produto F", 60.0, 60.0, 70.0));
+        produtos.add(new Produto("Produto G", 70.0, 65.0, 80.0));
+        produtos.add(new Produto("Produto H", 80.0, 70.0, 90.0));
+        produtos.add(new Produto("Produto I", 90.0, 75.0, 100.0));
+        produtos.add(new Produto("Produto J", 100.0, 80.0, 110.0));
 
         // Criando 5 itens
         List<Itens> itens = new ArrayList<>();
@@ -102,6 +107,11 @@ public class Main {
         itens.add(new Itens(produtos.get(2), 30));
         itens.add(new Itens(produtos.get(3), 40));
         itens.add(new Itens(produtos.get(4), 50));
+        itens.add(new Itens(produtos.get(5), 60));
+        itens.add(new Itens(produtos.get(6), 70));
+        itens.add(new Itens(produtos.get(7), 80));
+        itens.add(new Itens(produtos.get(8), 90));
+        itens.add(new Itens(produtos.get(9), 100));
 
         // Criando 5 vendas
         List<Venda> vendas = new ArrayList<>();

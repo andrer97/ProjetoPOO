@@ -4,7 +4,7 @@ import br.com.joaodebarro.jbcontrole.pessoas.Pessoa;
 public class Cliente extends Usuario{
 
 	private int pontos;
-	Pessoa pessoa;
+	private Pessoa pessoa;
 	
 		public Cliente(String login, String senha, String email, Pessoa pessoa) {
 		super(login, senha, email);

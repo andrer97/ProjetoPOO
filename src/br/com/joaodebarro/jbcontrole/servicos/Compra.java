@@ -23,13 +23,13 @@ public class Compra {
 		this.comprador = comprador;
 		valorFinal = 0;
 		for(Itens itemAtual : listaItens) {
-			// cria a variavel quantidade que recebe atraves do metodo getQuantidade() a quantidade do Itens atual
+
 			double quantidade = itemAtual.getQuantidade();
-			//cria a variavel produto do tipo produto que recebe o produto do Itens atual
+
 			Produto produto = itemAtual.getProduto();
-			//acessa o valor de compra do produto atual e multiplica pela quantidade atual
+
 			valorFinal +=  quantidade * produto.getValorCompra();
-			//pega a quantidade em estoque do produto atual e soma com a quantidade atual e joga esse valor para a quantidade em estoque do produto atual
+
 			produto.setQtdEstoque(produto.getQtdEstoque() + quantidade);
 		}
 		this.fornecedor.novaCompra(this);
