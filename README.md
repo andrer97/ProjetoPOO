@@ -1,0 +1,3 @@
+Sistema de Controle Empresarial
+
+Este sistema de controle empresarial foi desenvolvido como parte de um projeto acadêmico para a disciplina de Programação Orientada a Objetos (POO). Escrito em Java, o sistema oferece funcionalidades abrangentes para gerenciar compras, vendas, clientes, fornecedores, funcionários e entregas em uma empresa fictícia. Ele permite registrar transações de compra e venda de produtos, controlar o estoque, realizar pagamentos a fornecedores e funcionários, além de acompanhar entregas e interações com clientes. Com uma estrutura bem definida e classes modularizadas, o sistema é uma aplicação prática dos conceitos aprendidos em POO.
